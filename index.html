@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Challange </title>
+    <link rel="stylesheet" href="Typing___Css/index.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script src="Tyoing__Js/index.js"defer async></script>
+</head>
+<body>
+    <div class="container">
+        <div class="stats">
+            <p>Time:<span id="timer">0s</span></p>
+            <p> Mistakes:<span id="mistakes">0</span></p>
+        </div><!--./ states -->
+
+        <div id="quote"style='user-select: none;' draggable='false' onmousedown="return false" onselectstart="return false">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eaque quidem reiciendis deserunt voluptatum mollitia vitae. Libero adipisci voluptates accusantium quisquam recusandae vel et quo consequatur, ut laboriosam, illum odio.
+        </div><!--./ quote -->
+
+        <textarea draggable="false" style="user-select: none;"
+         name="" id="quote-input" rows="4"
+         placeholder="Type her when you are Redy !!"></textarea>
+        <button id="start-test"onclick="startTest()">Start Test</button>
+        <button id="resume-test"onclick="resumeTest()">Resume Test</button>
+        <button id="stop-test"onclick="displayReslut()">Stop Test</button>
+
+        <div class="result">
+            <h3>Result !!</h3> 
+            <div class="wrapper">
+                <p>Accuracy : <span id="accuracy"></span></p>
+                <p>Speed :<span id="wpm"></span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
